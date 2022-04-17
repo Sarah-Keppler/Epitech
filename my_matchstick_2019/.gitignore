@@ -1,0 +1,9 @@
+# bin
+matchstick
+
+# object and lib
+*.o
+*.a
+
+# personnal
+Note.txt

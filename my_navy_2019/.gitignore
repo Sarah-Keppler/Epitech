@@ -1,0 +1,9 @@
+# bin
+navy
+
+# object and lib
+*.o
+*.a
+
+# personnal
+Note.txt

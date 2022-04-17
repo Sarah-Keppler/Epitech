@@ -1,0 +1,9 @@
+# bin
+my_world
+
+# object and lib
+*.o
+*.a
+
+# personnal
+Note.txt

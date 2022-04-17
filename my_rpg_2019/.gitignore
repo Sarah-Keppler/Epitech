@@ -1,0 +1,12 @@
+# bin
+my_rpg
+
+# object and lib
+*.o
+*.a
+
+# other repositories
+my_RPG/
+
+# personnal
+Note.txt

@@ -1,0 +1,13 @@
+# bin
+my_sokoban
+
+# object and lib
+*.o
+*.a
+
+# other repositories
+Sokoban/
+Projet-Sokoban-Epitech/
+
+# personnal
+Note.txt

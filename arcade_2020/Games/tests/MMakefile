@@ -1,0 +1,39 @@
+##
+## Arcade tests | Game
+## Sarah-Keppler
+##
+
+NAME	=	arcade_menu
+
+CC	=	g++
+
+RM	=	rm -rf
+
+SRCS	=	src/Menu.cpp		\
+		src/AGame.cpp		\
+		../Common/Error.cpp	\
+		../Graphs/src/AGraph.cpp\
+		../Graphs/src/SDL2.cpp	\
+		src/mainMenu.cpp
+
+OBJS	=	 $(SRC:.cpp=.o)
+
+CXXFLAGS += 	-Wall -Wextra -Werror -I./include/
+
+LDFLAGS	+=	-lSDL2 -lSDL2_image -lSDL2_ttf
+
+all: $(NAME)
+
+$(NAME): $(OBJS)
+	 $(CC) $(CXXFLAGS) $(SRCS) $(LDFLAGS) -o $(NAME) $(LDFLAGS)
+	@echo -e "\033[01;38;5;44m================Compiling: Menu\033[0;0m"
+
+clean:
+	$(RM) *~ vgcore.* include/*~ src/*~ $(OBJS)
+
+fclean: clean
+	$(RM) $(NAME)
+
+re: fclean all
+
+.PHONY: all clean fclean re
